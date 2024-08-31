@@ -3,7 +3,8 @@ name: Run Crypto Application
 on:
   schedule:
     - cron: '0 9 * * 1'  # Voer uit elke maandag om 09:00 UTC
-    - cron: '37 22 * * 6'  # Voer uit elke zaterdag om 22:33 UTC
+    - cron: '50 22 * * 6'  # Voer uit elke zaterdag om 22:50 UTC
+    - cron: '00 9 * * 7'  # Voer uit elke zondag om 09:00 UTC
   workflow_dispatch:  # Maakt het mogelijk om de workflow handmatig te starten via GitHub Actions
 
 jobs:
