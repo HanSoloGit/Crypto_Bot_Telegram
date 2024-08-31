@@ -3,7 +3,7 @@ name: Run Crypto Application
 on:
   schedule:
     - cron: '0 9 * * 1'  # Voer uit elke maandag om 09:00 UTC
-    - cron: '35 22 * * 6'  # Voer uit elke zaterdag om 22:33 UTC
+    - cron: '37 22 * * 6'  # Voer uit elke zaterdag om 22:33 UTC
   workflow_dispatch:  # Maakt het mogelijk om de workflow handmatig te starten via GitHub Actions
 
 jobs:
@@ -29,4 +29,4 @@ jobs:
         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: |
-        python your_script_name.py  # Vervang 'your_script_name.py' door de naam van je script
+        python app.py  # Vervang 'your_script_name.py' door de naam van je script
